@@ -51,16 +51,18 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以int型別找最大質數方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
-    protected static int getMaxPrimeNumTotalI(String input) throws ParseException{
+    protected static long getMaxPrimeNumTotalI(String input) throws ParseException{
         /*計時用*/
         String timeStart = Get_Date.getDateNow();
         String timeEnd;
         /*參數*/
-        int inputNum, result = 0;
+        int inputNum;
+        long result = 0;
 
         try{
             inputNum = Integer.parseInt(input);
@@ -102,7 +104,8 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以int型別找質數總和方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -153,16 +156,18 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以long型別找最大質數方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
-    protected static long getMaxPrimeNumTotalL(String input) throws ParseException {
+    protected static BigDecimal getMaxPrimeNumTotalL(String input) throws ParseException {
         /*計時用*/
         String timeStart = Get_Date.getDateNow();
         String timeEnd;
         /*參數*/
-        long inputNum, result = 0;
+        long inputNum;
+        BigDecimal result = new BigDecimal("0");
 
         try{
             inputNum = Integer.parseInt(input);
@@ -188,7 +193,7 @@ public class Get_Prime_Number {
                                 System.out.println("已執行完 "+ (int)((i * 100) / inputNum) + "% 的範圍");
                             }
                             status = (int)((i * 100) / inputNum);
-                            result += i;
+                            result = result.add(new BigDecimal(i));
                         }
                     }
                     else if(i == 2){
@@ -196,15 +201,16 @@ public class Get_Prime_Number {
                             System.out.println("已執行完 "+ (int)((i * 100) / inputNum) + "% 的範圍");
                         }
                         status = (int)((i * 100) / inputNum);
-                        result += i;
+                        result = result.add(new BigDecimal(i));
                     }
                 }
             }
         } catch(NumberFormatException NFE){
-            result = 0;
+            result = new BigDecimal("0");
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以long型別找質數總和方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -264,7 +270,8 @@ public class Get_Prime_Number {
         }
 
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以BigDecimal型別找最大質數方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -324,7 +331,8 @@ public class Get_Prime_Number {
         }
 
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以BigDecimal型別找質數總和方法一已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -373,16 +381,18 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以int型別找最大質數方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
-    protected static int getMaxPrimeNumTotalNoSqrtI(String input) throws ParseException{
+    protected static long getMaxPrimeNumTotalNoSqrtI(String input) throws ParseException{
         /*計時用*/
         String timeStart = Get_Date.getDateNow();
         String timeEnd;
         /*參數*/
-        int inputNum, result = 0;
+        int inputNum;
+        long result = 0;
 
         try{
             inputNum = Integer.parseInt(input);
@@ -422,7 +432,8 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以int型別找質數總和方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -471,16 +482,18 @@ public class Get_Prime_Number {
             result = 0;
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以long型別找最大質數方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
-    protected static long getMaxPrimeNumTotalNoSqrtL(String input) throws ParseException {
+    protected static BigDecimal getMaxPrimeNumTotalNoSqrtL(String input) throws ParseException {
         /*計時用*/
         String timeStart = Get_Date.getDateNow();
         String timeEnd;
         /*參數*/
-        long inputNum, result = 0;
+        long inputNum;
+        BigDecimal result = new BigDecimal("0");
 
         try{
             inputNum = Integer.parseInt(input);
@@ -504,7 +517,7 @@ public class Get_Prime_Number {
                                 System.out.println("已執行完 "+ (int)((i * 100) / inputNum) + "% 的範圍");
                             }
                             status = (int)((i * 100) / inputNum);
-                            result += i;
+                            result = result.add(new BigDecimal(i));
                         }
                     }
                     else if(i == 2){
@@ -512,15 +525,16 @@ public class Get_Prime_Number {
                             System.out.println("已執行完 "+ (int)((i * 100) / inputNum) + "% 的範圍");
                         }
                         status = (int)((i * 100) / inputNum);
-                        result += i;
+                        result = result.add(new BigDecimal(i));
                     }
                 }
             }
         } catch(NumberFormatException NFE){
-            result = 0;
+            result = new BigDecimal("0");
         }
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以long型別找質數總和方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -578,7 +592,8 @@ public class Get_Prime_Number {
         }
 
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以BigDecimal型別找最大質數方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
@@ -636,7 +651,8 @@ public class Get_Prime_Number {
         }
 
         timeEnd = Get_Date.getDateNow();
-        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd));
+        System.out.print("\n以BigDecimal型別找質數總和方法二已完成，");
+        System.out.println(Get_Date.getTimeDifference(timeStart, timeEnd)+"\n");
         return result;
     }
 
